@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         try (FileWriter fileWriter = new FileWriter("Nargiza.txt")) {
-            for (int i = 0; i < convertToCharLowerCase().length - 1; i++) {
+            for (int i = 0; i < convertToCharLowerCase().length; i++) {
                 fileWriter.write(convertToCharUpperCase()[i] + " ");
                 fileWriter.write(convertToCharLowerCase()[i] + "\n");
 
@@ -28,7 +28,7 @@ public class Main {
         try (FileReader fileReader = new FileReader("Nargiza.txt")) {
             Scanner scanner = new Scanner(fileReader);
             while (scanner.hasNext()) {
-                for (int i = 1; i < convertToCharUpperCase().length + 10; i++) {
+                for (int i = 1; i < convertToCharUpperCase().length + 11; i++) {
                     System.out.println(i + ":" + scanner.nextLine());
 
 
